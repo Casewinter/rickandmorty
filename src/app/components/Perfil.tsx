@@ -21,7 +21,7 @@ const Perfil = (props: Props) => {
         className={`flex flex-col items-center p-2 justify-center  w-[250px] rounded-zxl bg-neutral-400 text-black font-medium  overflow-hidden rounded-md`}
       >
         <div className=" w-[180px] overflow-hidden rounded-full">
-          <Image
+          <img
             src={data.avatar_url}
             height={200}
             width={200}

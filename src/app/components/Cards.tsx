@@ -36,7 +36,7 @@ const Cards = (props: Props) => {
       className={`flex flex-col justify-center items-center w-[250px] rounded-zxl bg-neutral-400 text-black font-medium hover:cursor-pointer  overflow-hidden rounded-md`}
     >
       <div className="rounded-t-lg w-[250px] overflow-hidden">
-        <Image src={image} height={250} width={250} alt="personagem" />
+        <img src={image} height={250} width={250} alt="personagem" />
       </div>
       <div className="w-[200px] mt-2">
         <ul>
