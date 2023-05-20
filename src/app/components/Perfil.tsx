@@ -15,10 +15,10 @@ const Perfil = (props: Props) => {
   const { data } = props;
   return (
     <div
-      className={`w-[250px] rounded-zxl bg-neutral-400 text-black font-medium hover:cursor-pointer  overflow-hidden rounded-md`}
+      className={`w-[250px] rounded-zxl bg-neutral-400 text-black font-medium rounded-md`}
     >
       <div
-        className={`flex flex-col items-center p-2 justify-center  w-[250px] rounded-zxl bg-neutral-400 text-black font-medium hover:cursor-pointer  overflow-hidden rounded-md`}
+        className={`flex flex-col items-center p-2 justify-center  w-[250px] rounded-zxl bg-neutral-400 text-black font-medium  overflow-hidden rounded-md`}
       >
         <div className=" w-[180px] overflow-hidden rounded-full">
           <Image
@@ -40,7 +40,7 @@ const Perfil = (props: Props) => {
               Public Repos:
               <span className="font-semibold"> {data.public_repos}</span>
             </li>
-            <li className="font-semibold">
+            <li className="font-semibold hover:cursor-pointer">
               <Link href={data.html_url}>Profile link</Link>
             </li>
           </ul>

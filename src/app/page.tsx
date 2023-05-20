@@ -51,18 +51,23 @@ export default function Home() {
     <main>
       <div className="lg:w-[60%] xl:w-[50%] 2xl:w-[50%] md:w-[70%] m-auto p-2">
         <div className="w-full flex justify-center p-2">
-          <input
-            type="text"
-            placeholder="Search by name..."
-            className="rounded-s-md pl-2 focus:outline-none"
-            onChange={({ target }) => setNome(target.value)}
-          />
-          <button
-            onClick={pesquisar}
-            className="text-white bg-blue-700 p-2 font-semibold rounded-e-md"
-          >
-            Search
-          </button>
+          <div className="flex w-[250px] md:w-[300px] rounded-md overflow-hidden">
+            <input
+              type="text"
+              placeholder="Search by name..."
+              className="
+              w-[180px]
+              sm:w-[100%]
+              pl-2 focus:outline-none"
+              onChange={({ target }) => setNome(target.value)}
+            />
+            <button
+              onClick={pesquisar}
+              className="text-white bg-blue-700 p-2 font-semibold "
+            >
+              Search
+            </button>
+          </div>
         </div>
         <ul className="flex justify-center flex-wrap gap-2 ">
           {results.map((personagem: any) => (
