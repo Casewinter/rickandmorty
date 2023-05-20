@@ -42,13 +42,13 @@ export default function Personagem({ params }: { params: any }) {
       "
       >
         <div
-          className={`flex flex-col justify-center items-center w-[290px] rounded-zxl bg-neutral-400 text-black font-medium hover:cursor-pointer  rounded-md mr-2 mt-2 ml-2`}
+          className={`flex flex-col   w-[290px] rounded-zxl bg-neutral-400 text-black font-medium hover:cursor-pointer  rounded-md mr-2 mt-2 ml-2`}
         >
           <div className="rounded-t-md overflow-hidden w-[290px]">
             <Image src={image} height={300} width={300} alt="Personagem" />
           </div>
-          <ul>
-            <li className="overflow-hidden text-ellipsis whitespace-nowrap">
+          <ul className="w-[90%] p-2">
+            <li className="overflow-hidden text-ellipsis">
               Name: <span className="font-semibold "> {name}</span>
             </li>
             <li className="flex items-center gap-2 h-8">

@@ -17,7 +17,7 @@ async function getData() {
 const About = async () => {
   const data = await getData();
   return (
-    <main className="flex md:flex-row items-center flex-col md:items-start justify-center gap-2">
+    <main className="flex md:flex-row items-center justify-start flex-col md:items-start md:justify-center gap-2 h-[85%]">
       <Perfil data={data} />
       <div className="bg-neutral-400 w-[300px] rounded-md  p-3">
         <h1 className="font-black text-2xl">About Techs</h1>
